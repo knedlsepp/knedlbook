@@ -59,7 +59,9 @@
   # Enable CUPS to print documents.
   services.printing.enable = true;
 
-
+  services.journald.extraConfig = ''
+    SystemMaxUse=300M
+  '';
   # Enable the X11 windowing system.
   services.xserver.enable = true;
   services.xserver.layout = "us, de";
