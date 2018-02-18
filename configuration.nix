@@ -34,6 +34,7 @@
     firefox
     gitAndTools.gitFull
     gparted
+    sublime3
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
