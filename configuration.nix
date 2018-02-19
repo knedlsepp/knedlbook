@@ -124,6 +124,7 @@
   hardware.pulseaudio.enable = true;
   hardware.opengl.driSupport = true;
   hardware.opengl.extraPackages = [ pkgs.vaapiIntel ];
+  hardware.bluetooth.enable = false;
   networking.enableB43Firmware = true;
   # This value determines the NixOS release with which your system is to be
   # compatible, in order to avoid breaking some software such as database
