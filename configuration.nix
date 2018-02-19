@@ -80,7 +80,7 @@
   # Enable the X11 windowing system.
   services.xserver.enable = true;
   services.xserver.layout = "de, us";
-  services.xserver.xkbOptions = "eurosign:e, caps:swapescape";
+  services.xserver.xkbOptions = "eurosign:e, ctrl:nocaps";
 
   # I prefer a cool lap
   services.mbpfan = {
