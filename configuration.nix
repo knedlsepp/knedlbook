@@ -15,6 +15,9 @@
   boot.loader.efi.canTouchEfiVariables = true;
 
   networking.hostName = "knedlbook"; # Define your hostname.
+  networking.hosts = {
+    "127.0.0.1" = [ "knedlsepp.local" ];
+  };
   networking.networkmanager.enable = true;
 
    i18n = {
