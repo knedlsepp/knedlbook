@@ -70,10 +70,18 @@
   # Enable touchpad support.
   services.xserver.synaptics = {
     enable = true;
-    accelFactor = "0.02";
+    tapButtons = true;
+    fingersMap = [ 1 0 0 ];
+    buttonsMap = [ 1 3 2 ];
+    accelFactor = "0.025";
     palmDetect = true;
     twoFingerScroll = true;
     maxSpeed = "20.0";
+    additionalOptions = ''
+      Option "VertScrollDelta" "200"
+      Option "HorizScrollDelta" "-200"
+      Option "CoastingSpeed" "1.2"
+    '';
   }; 
   # Enable the KDE Desktop Environment.
   services.xserver.displayManager.sddm.enable = true;
