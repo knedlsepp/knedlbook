@@ -44,6 +44,8 @@
   programs.mtr.enable = true;
   # programs.gnupg.agent = { enable = true; enableSSHSupport = true; };
 
+  powerManagement.enable = true;
+
   fonts.enableFontDir = true;
   fonts.enableCoreFonts = true;
   fonts.enableGhostscriptFonts = true;
