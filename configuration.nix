@@ -44,6 +44,19 @@
   programs.mtr.enable = true;
   # programs.gnupg.agent = { enable = true; enableSSHSupport = true; };
 
+  fonts.enableFontDir = true;
+  fonts.enableCoreFonts = true;
+  fonts.enableGhostscriptFonts = true;
+  fonts.fonts = with pkgs; [
+    corefonts
+    inconsolata
+    liberation_ttf
+    dejavu_fonts
+    bakoma_ttf
+    gentium
+    ubuntu_font_family
+    terminus_font
+  ];
   # List services that you want to enable:
 
   # Enable the OpenSSH daemon.
