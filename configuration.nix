@@ -67,6 +67,15 @@
   services.xserver.layout = "de, us";
   services.xserver.xkbOptions = "eurosign:e, caps:swapescape";
 
+  # I prefer a cool lap
+  services.mbpfan = {
+    enable = true;
+    lowTemp = 58;
+    highTemp = 63;
+    maxTemp = 86;
+  };
+  services.thermald.enable = true;
+
   # Enable touchpad support.
   services.xserver.synaptics = {
     enable = true;
