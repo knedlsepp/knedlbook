@@ -38,6 +38,8 @@
     gitAndTools.gitFull
     gparted
     sublime3
+    python36Packages.mps-youtube
+    mpv
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
