@@ -73,14 +73,14 @@
     tapButtons = true;
     fingersMap = [ 1 0 0 ];
     buttonsMap = [ 1 3 2 ];
-    accelFactor = "0.025";
+    accelFactor = "0.020";
     palmDetect = true;
     twoFingerScroll = true;
     maxSpeed = "20.0";
     additionalOptions = ''
-      Option "VertScrollDelta" "200"
-      Option "HorizScrollDelta" "-200"
-      Option "CoastingSpeed" "1.2"
+      Option "VertScrollDelta" "250"
+      Option "HorizScrollDelta" "-250"
+      Option "CoastingSpeed" "1.0"
     '';
   }; 
   # Enable the KDE Desktop Environment.
