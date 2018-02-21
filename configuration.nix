@@ -38,6 +38,7 @@
     gitAndTools.gitFull
     gparted
     sublime3
+    chromium
     python36Packages.mps-youtube
     mpv
   ];
