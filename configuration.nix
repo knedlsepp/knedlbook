@@ -109,10 +109,11 @@
     accelFactor = "0.020";
     palmDetect = true;
     twoFingerScroll = true;
+    vertTwoFingerScroll = true;
     maxSpeed = "20.0";
     additionalOptions = ''
-      Option "VertScrollDelta" "250"
-      Option "HorizScrollDelta" "-250"
+      Option "VertScrollDelta" "-200"
+      Option "HorizScrollDelta" "-300"
       Option "CoastingSpeed" "1.0"
     '';
   }; 
