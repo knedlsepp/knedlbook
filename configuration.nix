@@ -96,8 +96,6 @@
     maxTemp = 86;
   };
 
-  services.shairport-sync.enable = true;
-
   services.thermald.enable = true;
 
   # Enable touchpad support.
