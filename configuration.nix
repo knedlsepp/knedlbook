@@ -31,6 +31,7 @@
 
   # List packages installed in system profile. To search by name, run:
   # $ nix-env -qaP | grep wget
+  environment.variables.MOZ_USE_XINPUT2 = "1";
   environment.systemPackages = with pkgs; [
     wget
     vim
