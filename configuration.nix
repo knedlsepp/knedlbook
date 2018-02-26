@@ -41,6 +41,7 @@
     sublime3
     chromium
     python36Packages.mps-youtube
+    adobe-reader
     mpv
   ];
 
