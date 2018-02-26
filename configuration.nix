@@ -45,6 +45,17 @@
     mpv
   ];
 
+  nixpkgs.config.packageOverrides = super: let self = super.pkgs; in {
+    xf86_input_mtrack = super.xf86_input_mtrack.overrideAttrs (oldAttrs: rec {
+      name = "xf86-input-mtrack-${version}";
+      version = "0.5.0";
+      src = super.fetchurl {
+        url = "http://github.com/p2rkw/xf86-input-mtrack/archive/v${version}.tar.gz";
+        sha256 = "1i0lvisicyfi4zkhny0wdzzk627ng6samz2vsjpk520240vp4xm9";
+      };
+    });
+  };
+
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
   programs.vim.defaultEditor = true;
@@ -122,16 +133,19 @@
       Option          "IgnoreThumb" "true"
       Option          "MaxTapTime" "150"
       Option          "PalmSize" "40"
+      Option          "ScrollCoastDuration" "1200"
+      Option          "ScrollCoastEnableSpeed" "0.05"
       Option          "ScrollDistance" "50"
-      Option          "ScrollDownButton" "4"
-      Option          "ScrollLeftButton" "7"
-      Option          "ScrollRightButton" "6"
-      Option          "ScrollUpButton" "5"
-      Option          "Sensitivity" "0.6"
+      Option          "ScrollDownButton" "5"
+      Option          "ScrollLeftButton" "6"
+      Option          "ScrollRightButton" "7"
+      Option          "ScrollSmooth" "1"
+      Option          "ScrollUpButton" "4"
+      Option          "Sensitivity" "0.60"
       Option          "SwipeDistance" "1000"
       Option          "SwipeDownButton" "0"
-      Option          "SwipeLeftButton" "9"
-      Option          "SwipeRightButton" "8"
+      Option          "SwipeLeftButton" "8"
+      Option          "SwipeRightButton" "9"
       Option          "SwipeUpButton" "0"
       Option          "TapButton1" "1"
       Option          "TapButton2" "3"
@@ -139,6 +153,7 @@
       Option          "TapButton4" "0"
       Option          "TapDragEnable" "false"
       Option          "TapDragTime" "0"
+      Option          "VelocityScale" "1.0"
       Option          "ThumbSize" "30"
     '';
   };
