@@ -101,15 +101,40 @@
   services.thermald.enable = true;
 
   # Enable touchpad support.
-  services.xserver.synaptics = {
+  services.xserver.multitouch = {
     enable = true;
-    tapButtons = true;
-    fingersMap = [ 1 0 0 ];
-    buttonsMap = [ 1 3 2 ];
-    palmDetect = true;
-    twoFingerScroll = true;
-    vertTwoFingerScroll = true;
-  }; 
+    ignorePalm = true;
+    buttonsMap = [ 3 3 3 ];
+    additionalOptions = ''
+      Option          "Sensitivity" "0.60"
+      Option          "FingerHigh" "5"
+      Option          "FingerLow" "1"
+      Option          "IgnoreThumb" "true"
+      Option          "ThumbRatio" "70"
+      Option          "ThumbSize" "25"
+      Option          "IgnorePalm" "true"
+      Option          "TapButton1" "0"
+      Option          "TapButton2" "0"
+      Option          "TapButton3" "0"
+      Option          "TapButton4" "0"
+      Option          "ButtonMoveEmulate" "false"
+      Option          "ButtonIntegrated" "true"
+      Option          "ClickTime" "25"
+      Option          "BottomEdge" "30"
+      Option          "SwipeLeftButton" "8"
+      Option          "SwipeRightButton" "9"
+      Option          "SwipeUpButton" "0"
+      Option          "SwipeDownButton" "0"
+      Option          "SwipeDistance" "700"
+      Option          "ScrollCoastDuration" "600"
+      Option          "ScrollCoastEnableSpeed" "0.05"
+      Option          "ScrollDistance" "22"
+      Option          "ScrollClickTime" "12"
+      Option          "ScrollSensitivity" "0"
+      Option          "Hold1Move1StationaryMaxMove" "1000"
+    '';
+  };
+
   # Enable the KDE Desktop Environment.
   services.xserver.displayManager.sddm.enable = true;
   services.xserver.desktopManager.plasma5.enable = true;
