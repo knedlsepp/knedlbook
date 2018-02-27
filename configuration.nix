@@ -121,7 +121,7 @@
       Option          "ConstantDeceleration" "2.1"
       Option          "ButtonEnable" "true"
       Option          "ButtonIntegrated" "true"
-      Option          "ButtonMoveEmulate" "false"
+      Option          "ButtonMoveEmulate" "true"
       Option          "ButtonTouchExpire" "10"
       Option          "ClickFinger1" "1"
       Option          "ClickFinger2" "1"
