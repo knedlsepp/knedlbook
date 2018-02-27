@@ -157,7 +157,8 @@
       Option          "TapDragEnable" "false"
       Option          "TapDragTime" "0"
       Option          "VelocityScale" "1.0"
-      Option          "ThumbSize" "30"
+      Option          "ThumbSize" "22"
+      Option          "ThumbRatio" "90"
     '';
   };
 
