@@ -169,6 +169,8 @@
 
   # Enable the KDE Desktop Environment.
   services.xserver.displayManager.sddm.enable = true;
+  services.xserver.displayManager.sddm.autoLogin.enable = true;
+  services.xserver.displayManager.sddm.autoLogin.user = "sepp";
   services.xserver.desktopManager.plasma5.enable = true;
   nixpkgs.config.allowUnfree = true; 
 
