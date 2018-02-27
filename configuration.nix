@@ -118,11 +118,10 @@
     buttonsMap = [ 1 3 2 ];
     additionalOptions = ''
       Option          "AccelerationProfile" "2"
-      Option          "AdaptiveDeceleration" "5"
-      Option          "ConstantDeceleration" "2"
+      Option          "ConstantDeceleration" "2.5"
       Option          "ButtonEnable" "true"
       Option          "ButtonIntegrated" "true"
-      Option          "ButtonMoveEmulate" "true"
+      Option          "ButtonMoveEmulate" "false"
       Option          "ButtonTouchExpire" "10"
       Option          "ClickFinger1" "1"
       Option          "ClickFinger2" "1"
@@ -164,6 +163,7 @@
       Option          "VelocityScale" "1.0"
       Option          "ThumbSize" "22"
       Option          "ThumbRatio" "90"
+      Option          "Hold1Move1StationaryButton" "0"
     '';
   };
 
