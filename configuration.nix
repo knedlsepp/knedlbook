@@ -145,7 +145,7 @@
       Option          "ScrollRightButton" "7"
       Option          "ScrollSmooth" "1"
       Option          "ScrollUpButton" "4"
-      Option          "Sensitivity" "0.3"
+      Option          "Sensitivity" "0.27"
       Option          "SwipeDistance" "1000"
       Option          "SwipeDownButton" "0"
       Option          "SwipeLeftButton" "8"
