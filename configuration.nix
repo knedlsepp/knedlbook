@@ -130,6 +130,7 @@
       Option          "DisableOnPalm" "true"
       Option          "DisableOnThumb" "false"
       Option          "EdgeBottomSize" "0"
+      Option          "EdgeRightSize" "15"
       Option          "FingerHigh" "5"
       Option          "FingerLow" "1"
       Option          "GestureWaitTime" "0"
